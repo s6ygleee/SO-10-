@@ -1,0 +1,1591 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:Susyno/guide/Susyno"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["SUSYNO PACLET SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"Tutorials \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno Tutorial\"\>":>
+       Documentation`HelpLookup["paclet:Susyno/tutorial/SusynoTutorial"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"See Also \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"DimR\"\>":>Documentation`HelpLookup[
+       "paclet:Susyno/ref/DimR"], \
+"\<\"PermutationSymmetryOfTensorProductParts\"\>":>Documentation`HelpLookup[
+       "paclet:Susyno/ref/PermutationSymmetryOfTensorProductParts"], \
+"\<\"RepName\"\>":>Documentation`HelpLookup["paclet:Susyno/ref/RepName"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"More About \[RightGuillemet]\"\>",
+        StripOnInput->False], {
+       RowBox[{
+        RowBox[{"{", "}"}], "\[LeftDoubleBracket]", "1", 
+        "\[RightDoubleBracket]"}]:>Documentation`HelpLookup[
+        If[
+         StringMatchQ[
+          Part[{}, 2], "paclet*"], 
+         Part[
+          
+          Part[{{}, {
+            "D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94ACM Trans. Math. \
+Softw. 19 (1993) 95", 
+             StringReplace[{
+               URL["http://dx.doi.org/10.1145/77626.77634"], None}, "paclet:" :> 
+              ""]}}, 1], 2], 
+         StringJoin["paclet:", 
+          Part[
+           
+           Part[{{}, {
+             "D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94ACM Trans. Math. \
+Softw. 19 (1993) 95", 
+              StringReplace[{
+                URL["http://dx.doi.org/10.1145/77626.77634"], None}, 
+               "paclet:" :> ""]}}, 1], 
+           2]]]], "\<\"D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94ACM \
+Trans. Math. Softw. 19 (1993) 95\"\>":>Documentation`HelpLookup[
+        If[
+         StringMatchQ[
+          StringReplace[{
+            URL["http://dx.doi.org/10.1145/77626.77634"], None}, "paclet:" :> 
+           ""], "paclet*"], 
+         Part[
+          
+          Part[{{}, {
+            "D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94ACM Trans. Math. \
+Softw. 19 (1993) 95", 
+             StringReplace[{
+               URL["http://dx.doi.org/10.1145/77626.77634"], None}, "paclet:" :> 
+              ""]}}, 2], 2], 
+         StringJoin["paclet:", 
+          Part[
+           
+           Part[{{}, {
+             "D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94ACM Trans. Math. \
+Softw. 19 (1993) 95", 
+              StringReplace[{
+                URL["http://dx.doi.org/10.1145/77626.77634"], None}, 
+               "paclet:" :> ""]}}, 2], 2]]]]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"URL \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno/ref/ReduceRepProduct\"\>":>
+       None, "\<\"Copy Mathematica url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["Susyno/ref/ReduceRepProduct"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/mathematica/Susyno/ref/\
+ReduceRepProduct.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+            "http://reference.wolfram.com/mathematica/", 
+             "Susyno/ref/ReduceRepProduct", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ CellID->1],
+
+Cell["ReduceRepProduct", "ObjectName",
+ CellID->1224892054],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ReduceRepProduct", "[", 
+       RowBox[{"group", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"rep1", ",", " ", "rep2", ",", "..."}], "}"}]}], "]"}]], 
+      "InlineFormula"],
+     " \[LineSeparator]Reduces the direct product representation ",
+     Cell[BoxData["rep1"], "InlineFormula"],
+     " x ",
+     Cell[BoxData["rep2"], "InlineFormula"],
+     " x ... into its irreducible parts"
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->199498594],
+
+Cell[TextData[{
+ Cell[BoxData["group"], "InlineFormula"],
+ " should be the ",
+ ButtonBox["Cartan matrix",
+  BaseStyle->"Link",
+  ButtonData->"paclet:Susyno/ref/CartanMatrix"],
+ " of the intended group."
+}], "Notes",
+ CellID->1067943069],
+
+Cell[TextData[{
+ "Each representation ",
+ Cell[BoxData["rep"], "InlineFormula"],
+ " should be a list of non-negative integers (Dynkin coefficients)."
+}], "Notes",
+ CellID->360734878],
+
+Cell[TextData[{
+ "There can be 2 or more  ",
+ Cell[BoxData["rep"], "InlineFormula"],
+ "s as input (there is no upper limit)."
+}], "Notes",
+ CellID->73174212],
+
+Cell[TextData[{
+ "The output of this method is of the form ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"irrep1", ",", " ", "multiplicity1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"irrep2", ",", "multiplicity2"}], "}"}], ",", " "}]}]], 
+  "InlineFormula"],
+ " ",
+ Cell[BoxData[
+  RowBox[{"...", "}"}]], "InlineFormula"],
+ " where ",
+ Cell[BoxData["irrep"], "InlineFormula"],
+ "s are the irreducible representations in the product (given by their Dynkin \
+coefficients) and ",
+ Cell[BoxData["multiplicities"], "InlineFormula"],
+ " are the number of times each ",
+ Cell[BoxData["irrep"], "InlineFormula"],
+ " is contained in the product."
+}], "Notes",
+ CellID->133619986],
+
+Cell[TextData[{
+ "The function ",
+ ButtonBox["PermutationSymmetryOfTensorProductParts",
+  BaseStyle->"Link",
+  ButtonData->"paclet:Susyno/ref/PermutationSymmetryOfTensorProductParts"],
+ " can be seen as a generalization of ReduceRepProduct, as it also outputs \
+information concerning the transformation of each irreducible representations \
+in the product, under a permutation of the fields being multiplied."
+}], "Notes",
+ CellID->597051646]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["EXAMPLES",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->120571808],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(3)", "ExampleCount"]
+}], "ExampleSection",
+ CellID->104368131],
+
+Cell["\<\
+This tells us that in the product {1,0} x {1,0} of SU(3) there is one {2,0} \
+irrep and one {1,0}:\
+\>", "ExampleText",
+ CellID->513681956],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReduceRepProduct", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->196926373],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}], ",", "1"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{171, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->28296660]
+}, Open  ]],
+
+Cell["\<\
+It turns out that {1,0} is the fundamental representation of SU(3):\
+\>", "ExampleText",
+ CellID->791803354],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RepName", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->43353311],
+
+Cell[BoxData[
+ StyleBox["\<\"3\"\>",
+  StripOnInput->False,
+  FontWeight->Bold]], "Output",
+ ImageSize->{11, 16},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->40591381]
+}, Open  ]],
+
+Cell["So what is its conjugate? It is {0,1}:", "ExampleText",
+ CellID->337007840],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RepName", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->101035205],
+
+Cell[BoxData[
+ OverscriptBox[
+  StyleBox["\<\"3\"\>",
+   StripOnInput->False,
+   FontWeight->Bold], "_"]], "Output",
+ ImageSize->{11, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]=",
+ CellID->707431207]
+}, Open  ]],
+
+Cell["\<\
+We can also check that it is {0,1} because the product {1,0} x {0,1} contains \
+the SU(3) singlet {0,0}:\
+\>", "ExampleText",
+ CellID->346021936],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReduceRepProduct", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->103769142],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], ",", "1"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{171, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]=",
+ CellID->19401659]
+}, Open  ]],
+
+Cell["Sure enough,", "ExampleText",
+ CellID->30425394],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RepName", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->102523921],
+
+Cell[BoxData[
+ StyleBox["\<\"1\"\>",
+  StripOnInput->False,
+  FontWeight->Bold]], "Output",
+ ImageSize->{11, 16},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[5]=",
+ CellID->330439938]
+}, Open  ]],
+
+Cell["\<\
+and {1,1}, the other representation in the product, is the adjoint (as \
+expected):\
+\>", "ExampleText",
+ CellID->284900139],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RepName", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->255173023],
+
+Cell[BoxData[
+ StyleBox["\<\"8\"\>",
+  StripOnInput->False,
+  FontWeight->Bold]], "Output",
+ ImageSize->{11, 16},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[6]=",
+ CellID->374345070]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->62308732],
+
+Cell["\<\
+There is no limit for the number of representations in the product. For \
+example {1, 0} x {1, 1} x {7, 2} x {2, 2} of SU(3):\
+\>", "ExampleText",
+ CellID->164023796],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReduceRepProduct", "[", 
+  RowBox[{"SU3", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->26272814],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"11", ",", "5"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"9", ",", "6"}], "}"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"10", ",", "4"}], "}"}], ",", "9"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"7", ",", "7"}], "}"}], ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"8", ",", "5"}], "}"}], ",", "16"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"12", ",", "3"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"11", ",", "2"}], "}"}], ",", "12"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"9", ",", "3"}], "}"}], ",", "28"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"10", ",", "1"}], "}"}], ",", "24"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"6", ",", "6"}], "}"}], ",", "16"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"7", ",", "4"}], "}"}], ",", "36"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"8", ",", "2"}], "}"}], ",", "43"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"5", ",", "8"}], "}"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "9"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "7"}], "}"}], ",", "9"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"5", ",", "5"}], "}"}], ",", "28"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"6", ",", "3"}], "}"}], ",", "45"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "8"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "6"}], "}"}], ",", "12"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "4"}], "}"}], ",", "28"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"13", ",", "1"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"12", ",", "0"}], "}"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"9", ",", "0"}], "}"}], ",", "20"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"7", ",", "1"}], "}"}], ",", "37"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"5", ",", "2"}], "}"}], ",", "34"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"6", ",", "0"}], "}"}], ",", "16"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "7"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "5"}], "}"}], ",", "9"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}], ",", "16"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "1"}], "}"}], ",", "14"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "6"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "4"}], "}"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "0"}], "}"}], ",", "2"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{528, 101},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->488119055]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->652013527],
+
+Cell["\<\
+Different representations which are indistinguishable just by looking at the \
+dimensions,\
+\>", "ExampleText",
+ CellID->554346309],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DimR", "[", 
+  RowBox[{"SO10", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DimR", "[", 
+  RowBox[{"SO10", ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellLabel->"In[1]:=",
+ CellID->353483304],
+
+Cell[BoxData["210"], "Output",
+ ImageSize->{25, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->397961725],
+
+Cell[BoxData["210"], "Output",
+ ImageSize->{25, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->87144179]
+}, Open  ]],
+
+Cell["\<\
+... may reveal their differences in direct products with known \
+representations such as {1,0,0,0,0}=fundamental of SO(10):\
+\>", "ExampleText",
+ CellID->360467482],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ReduceRepProduct", "[", 
+  RowBox[{"SO10", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}]}], "}"}]}],
+   "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReduceRepProduct", "[", 
+  RowBox[{"SO10", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]}], "}"}]}],
+   "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->196227131],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}], ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "0", ",", "2"}], "}"}], ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "2", ",", "0"}], "}"}], ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1", ",", "0", ",", "0"}], "}"}], ",", 
+     "1"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{551, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->372591401],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     "1"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{415, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->701607823]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[TextData[{
+   "Neat Examples",
+   "\[NonBreakingSpace]\[NonBreakingSpace]",
+   Cell["(1)", "ExampleCount"]
+  }], "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740],
+
+Cell["\<\
+Each quark is in the SU(3) fundamental representation (which is {1,0}) and an \
+anti-quark in its conjugate {0,1}. We can see if different combinations of \
+quarks and anti-quarks can be uncolored by checking if in the direct product \
+representation there are SU(3) singlets {0,0}:\
+\>", "ExampleText",
+ CellID->358872975],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Print", "[", "\"\<Are there colour singlets in q q q?\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"irrepList", "=", 
+  RowBox[{"ReduceRepProduct", "[", 
+   RowBox[{"SU3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MemberQ", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", "\[Infinity]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<Are there colour singlets in q q q q?\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"irrepList", "=", 
+  RowBox[{"ReduceRepProduct", "[", 
+   RowBox[{"SU3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MemberQ", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", "\[Infinity]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<Are there colour singlets in q q q q q?\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"irrepList", "=", 
+  RowBox[{"ReduceRepProduct", "[", 
+   RowBox[{"SU3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MemberQ", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", "\[Infinity]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<Are there colour singlets in q q q q qBar?\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"irrepList", "=", 
+  RowBox[{"ReduceRepProduct", "[", 
+   RowBox[{"SU3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MemberQ", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", "\[Infinity]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", "\"\<\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  "\"\<Are there colour singlets in q q q qBar qBar?\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"irrepList", "=", 
+  RowBox[{"ReduceRepProduct", "[", 
+   RowBox[{"SU3", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MemberQ", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0"}], "}"}], ",", "\[Infinity]"}], "]"}]}], "Input",
+ CellLabel->"In[1]:=",
+ CellID->96133454],
+
+Cell[BoxData["\<\"Are there colour singlets in q q q?\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->304061192],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "0"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], ",", "1"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{253, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->457042180],
+
+Cell[BoxData["True"], "Output",
+ ImageSize->{32, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->624582407],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->180271195],
+
+Cell[BoxData["\<\"Are there colour singlets in q q q q?\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->135707397]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "0"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "2"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", "3"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{335, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->90613608],
+
+Cell[BoxData["False"], "Output",
+ ImageSize->{39, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->590851479],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->88920977],
+
+Cell[BoxData["\<\"Are there colour singlets in q q q q q?\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->55547690]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"5", ",", "0"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "1"}], "}"}], ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "0"}], "}"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}], ",", "5"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{417, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->402099572],
+
+Cell[BoxData["False"], "Output",
+ ImageSize->{39, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->94389002],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->553264049],
+
+Cell[BoxData["\<\"Are there colour singlets in q q q q qBar?\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->88280886]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "1"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "0"}], "}"}], ",", "4"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "2"}], "}"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "1"}], "}"}], ",", "8"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "3"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], ",", "3"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{499, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->422779179],
+
+Cell[BoxData["True"], "Output",
+ ImageSize->{32, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->56278213],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->217214039],
+
+Cell[BoxData["\<\"Are there colour singlets in q q q qBar qBar?\"\>"], "Print",
+ CellLabel->"During evaluation of In[132]:=",
+ CellID->72182311]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"3", ",", "2"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"4", ",", "0"}], "}"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "1"}], "}"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "3"}], "}"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "2"}], "}"}], ",", "5"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{499, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->316559558],
+
+Cell[BoxData["False"], "Output",
+ ImageSize->{39, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->33127133]
+}, Open  ]],
+
+Cell[TextData[{
+ "Using ",
+ Cell[BoxData["ReduceRepProduct"], "InlineFormula"],
+ " and ",
+ Cell[BoxData["RepName"], "InlineFormula"],
+ " together: the function ",
+ Cell[BoxData["RepName"], "InlineFormula"],
+ " can be used to convert the irreps given in Dynkin coefficients notation:"
+}], "ExampleText",
+ CellID->448198813],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Print", "[", 
+  "\"\<Fundamental x Fundamental x 24 of SU(5) breaks down into:\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"irreps", "=", 
+   RowBox[{"ReduceRepProduct", "[", 
+    RowBox[{"SU5", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"RepName", "[", 
+        RowBox[{"SU5", ",", 
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", "Bold"}], "]"}], ",", 
+     RowBox[{"#", "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], "}"}], "&"}], "/@", 
+  "irreps"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->244066278],
+
+Cell[BoxData["\<\"Fundamental x Fundamental x 24 of SU(5) breaks down into:\"\
+\>"], "Print",
+ CellLabel->"During evaluation of In[129]:=",
+ CellID->337756231],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     StyleBox[
+      StyleBox["\<\"160\"\>",
+       StripOnInput->False,
+       FontWeight->Bold],
+      StripOnInput->False,
+      FontWeight->Bold], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     StyleBox[
+      StyleBox["\<\"175\"\>",
+       StripOnInput->False,
+       FontWeight->Bold],
+      StripOnInput->False,
+      FontWeight->Bold], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     StyleBox[
+      StyleBox["\<\"15\"\>",
+       StripOnInput->False,
+       FontWeight->Bold],
+      StripOnInput->False,
+      FontWeight->Bold], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     StyleBox[
+      StyleBox["\<\"40\"\>",
+       StripOnInput->False,
+       FontWeight->Bold],
+      StripOnInput->False,
+      FontWeight->Bold], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     StyleBox[
+      StyleBox["\<\"10\"\>",
+       StripOnInput->False,
+       FontWeight->Bold],
+      StripOnInput->False,
+      FontWeight->Bold], ",", "2"}], "}"}]}], "}"}]], "Output",
+ ImageSize->{306, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->285097703]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["SEE ALSO",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["DimR",
+    BaseStyle->"Link",
+    ButtonData->"paclet:Susyno/ref/DimR"],
+   FontFamily->"Verdana"]], "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["PermutationSymmetryOfTensorProductParts",
+    BaseStyle->"Link",
+    ButtonData->"paclet:Susyno/ref/PermutationSymmetryOfTensorProductParts"],
+   FontFamily->"Verdana"]], "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  StyleBox[
+   ButtonBox["RepName",
+    BaseStyle->"Link",
+    ButtonData->"paclet:Susyno/ref/RepName"],
+   FontFamily->"Verdana"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["TUTORIALS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["Susyno Tutorial",
+ BaseStyle->"Link",
+ ButtonData->"paclet:Susyno/tutorial/SusynoTutorial"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["MORE ABOUT",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "MoreAboutSection",
+ CellID->38303248],
+
+Cell["The algorithm used is based on the following sources:", "MoreAbout",
+ CellID->474435919],
+
+Cell[TextData[{
+ ButtonBox["D.M. Snow, ACM Trans. Math. Softw. 16 (1990) 94",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://dx.doi.org/10.1145/77626.77634"], None}],
+ ";\[LineSeparator]",
+ ButtonBox["ACM Trans. Math. Softw. 19 (1993) 95",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://dx.doi.org/10.1145/151271.151278"], None}],
+ "."
+}], "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 729},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"ReduceRepProduct - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2014, 12, 18, 10, 47, 34.3213456}", "context" -> "Susyno`", 
+    "keywords" -> {
+     "Direct product", "Representation", "Group", 
+      "Irreducible representation", "Reduce"}, "index" -> True, "label" -> 
+    "Susyno Paclet Symbol", "language" -> "en", "paclet" -> "Susyno", 
+    "status" -> "None", "summary" -> 
+    "ReduceRepProduct[group, {rep1, rep2, ...}] Reduces the direct product \
+representation rep1 x rep2 x ... into its irreducible parts", 
+    "synonyms" -> {}, "title" -> "ReduceRepProduct", "type" -> "Symbol", 
+    "uri" -> "Susyno/ref/ReduceRepProduct"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "9.0 for Microsoft Windows (64-bit) (January 25, 2013)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[8843, 261, 461, 13, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->120571808]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 39156, 1382}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[609, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[688, 24, 178, 5, 70, "LinkTrail"],
+Cell[869, 31, 4838, 118, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[5710, 151, 59, 1, 70, "ObjectName",
+ CellID->1224892054],
+Cell[CellGroupData[{
+Cell[5794, 156, 654, 19, 70, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[6473, 179, 580, 17, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->199498594],
+Cell[7056, 198, 236, 8, 70, "Notes",
+ CellID->1067943069],
+Cell[7295, 208, 182, 5, 70, "Notes",
+ CellID->360734878],
+Cell[7480, 215, 157, 5, 70, "Notes",
+ CellID->73174212],
+Cell[7640, 222, 708, 22, 70, "Notes",
+ CellID->133619986],
+Cell[8351, 246, 443, 9, 70, "Notes",
+ CellID->597051646]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8843, 261, 461, 13, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->120571808],
+Cell[CellGroupData[{
+Cell[9329, 278, 148, 5, 70, "ExampleSection",
+ CellID->104368131],
+Cell[9480, 285, 149, 4, 70, "ExampleText",
+ CellID->513681956],
+Cell[CellGroupData[{
+Cell[9654, 293, 292, 10, 70, "Input",
+ CellID->196926373],
+Cell[9949, 305, 407, 15, 36, "Output",
+ CellID->28296660]
+}, Open  ]],
+Cell[10371, 323, 118, 3, 70, "ExampleText",
+ CellID->791803354],
+Cell[CellGroupData[{
+Cell[10514, 330, 176, 6, 70, "Input",
+ CellID->43353311],
+Cell[10693, 338, 220, 8, 37, "Output",
+ CellID->40591381]
+}, Open  ]],
+Cell[10928, 349, 81, 1, 70, "ExampleText",
+ CellID->337007840],
+Cell[CellGroupData[{
+Cell[11034, 354, 177, 6, 70, "Input",
+ CellID->101035205],
+Cell[11214, 362, 246, 9, 36, "Output",
+ CellID->707431207]
+}, Open  ]],
+Cell[11475, 374, 155, 4, 70, "ExampleText",
+ CellID->346021936],
+Cell[CellGroupData[{
+Cell[11655, 382, 292, 10, 70, "Input",
+ CellID->103769142],
+Cell[11950, 394, 407, 15, 36, "Output",
+ CellID->19401659]
+}, Open  ]],
+Cell[12372, 412, 54, 1, 70, "ExampleText",
+ CellID->30425394],
+Cell[CellGroupData[{
+Cell[12451, 417, 177, 6, 70, "Input",
+ CellID->102523921],
+Cell[12631, 425, 221, 8, 37, "Output",
+ CellID->330439938]
+}, Open  ]],
+Cell[12867, 436, 134, 4, 70, "ExampleText",
+ CellID->284900139],
+Cell[CellGroupData[{
+Cell[13026, 444, 177, 6, 70, "Input",
+ CellID->255173023],
+Cell[13206, 452, 221, 8, 37, "Output",
+ CellID->374345070]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13464, 465, 124, 3, 70, "ExampleDelimiter",
+ CellID->62308732],
+Cell[13591, 470, 176, 4, 70, "ExampleText",
+ CellID->164023796],
+Cell[CellGroupData[{
+Cell[13792, 478, 417, 14, 70, "Input",
+ CellID->26272814],
+Cell[14212, 494, 4017, 143, 122, "Output",
+ CellID->488119055]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18278, 643, 125, 3, 70, "ExampleDelimiter",
+ CellID->652013527],
+Cell[18406, 648, 141, 4, 70, "ExampleText",
+ CellID->554346309],
+Cell[CellGroupData[{
+Cell[18572, 656, 376, 12, 70, "Input",
+ CellID->353483304],
+Cell[18951, 670, 160, 5, 36, "Output",
+ CellID->397961725],
+Cell[19114, 677, 159, 5, 36, "Output",
+ CellID->87144179]
+}, Open  ]],
+Cell[19288, 685, 174, 4, 70, "ExampleText",
+ CellID->360467482],
+Cell[CellGroupData[{
+Cell[19487, 693, 672, 20, 70, "Input",
+ CellID->196227131],
+Cell[20162, 715, 776, 27, 36, "Output",
+ CellID->372591401],
+Cell[20941, 744, 628, 22, 36, "Output",
+ CellID->701607823]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21630, 773, 228, 7, 70, "ExampleSection",
+ CellID->589267740],
+Cell[21861, 782, 333, 6, 70, "ExampleText",
+ CellID->358872975],
+Cell[CellGroupData[{
+Cell[22219, 792, 3870, 115, 70, "Input",
+ CellID->96133454],
+Cell[26092, 909, 135, 2, 70, "Print",
+ CellID->304061192],
+Cell[26230, 913, 520, 19, 36, "Output",
+ CellID->457042180],
+Cell[26753, 934, 161, 5, 36, "Output",
+ CellID->624582407],
+Cell[CellGroupData[{
+Cell[26939, 943, 100, 2, 70, "Print",
+ CellID->180271195],
+Cell[27042, 947, 137, 2, 70, "Print",
+ CellID->135707397]
+}, Open  ]],
+Cell[27194, 952, 631, 23, 36, "Output",
+ CellID->90613608],
+Cell[27828, 977, 162, 5, 36, "Output",
+ CellID->590851479],
+Cell[CellGroupData[{
+Cell[28015, 986, 99, 2, 70, "Print",
+ CellID->88920977],
+Cell[28117, 990, 138, 2, 70, "Print",
+ CellID->55547690]
+}, Open  ]],
+Cell[28270, 995, 744, 27, 36, "Output",
+ CellID->402099572],
+Cell[29017, 1024, 161, 5, 36, "Output",
+ CellID->94389002],
+Cell[CellGroupData[{
+Cell[29203, 1033, 100, 2, 70, "Print",
+ CellID->553264049],
+Cell[29306, 1037, 141, 2, 70, "Print",
+ CellID->88280886]
+}, Open  ]],
+Cell[29462, 1042, 856, 31, 36, "Output",
+ CellID->422779179],
+Cell[30321, 1075, 160, 5, 36, "Output",
+ CellID->56278213],
+Cell[CellGroupData[{
+Cell[30506, 1084, 100, 2, 70, "Print",
+ CellID->217214039],
+Cell[30609, 1088, 144, 2, 70, "Print",
+ CellID->72182311]
+}, Open  ]],
+Cell[30768, 1093, 856, 31, 36, "Output",
+ CellID->316559558],
+Cell[31627, 1126, 161, 5, 36, "Output",
+ CellID->33127133]
+}, Open  ]],
+Cell[31803, 1134, 322, 9, 70, "ExampleText",
+ CellID->448198813],
+Cell[CellGroupData[{
+Cell[32150, 1147, 1001, 31, 70, "Input",
+ CellID->244066278],
+Cell[33154, 1180, 159, 3, 70, "Print",
+ CellID->337756231],
+Cell[33316, 1185, 1211, 47, 36, "Output",
+ CellID->285097703]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34588, 1239, 417, 12, 70, "SeeAlsoSection",
+ CellID->1255426704],
+Cell[35008, 1253, 843, 28, 70, "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35888, 1286, 419, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[36310, 1300, 151, 3, 70, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36498, 1308, 419, 12, 70, "MoreAboutSection",
+ CellID->38303248],
+Cell[36920, 1322, 94, 1, 70, "MoreAbout",
+ CellID->474435919],
+Cell[37017, 1325, 395, 12, 70, "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+Cell[37427, 1340, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

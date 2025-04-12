@@ -1,0 +1,396 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:Susyno/guide/Susyno"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["SUSYNO PACLET SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"Tutorials \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno Tutorial\"\>":>
+       Documentation`HelpLookup["paclet:Susyno/tutorial/SusynoTutorial"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"URL \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno/ref/SimplifyEinsteinNotation\"\>":>
+       None, "\<\"Copy Mathematica url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["Susyno/ref/SimplifyEinsteinNotation"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/mathematica/Susyno/ref/\
+SimplifyEinsteinNotation.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+            "http://reference.wolfram.com/mathematica/", 
+             "Susyno/ref/SimplifyEinsteinNotation", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["SimplifyEinsteinNotation", "ObjectName",
+ CellID->1224892054],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"SimplifyEinsteinNotation", "[", 
+       RowBox[{"expression", ",", "tensors", ",", "indices"}], "]"}]], 
+      "InlineFormula"],
+     " \[LineSeparator]Simplify ",
+     Cell[BoxData["expression"], "InlineFormula"],
+     " with some  ",
+     Cell[BoxData["tensors"], "InlineFormula"],
+     " written in Einstein notation"
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->305550792],
+
+Cell[TextData[{
+ "In an expression written with the Einstein convention, repeated indices are \
+assumed to be summed over. These are dummy indices, but ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " will not recognize it, leading to complicated/unsimplified expressions."
+}], "Notes",
+ CellID->1067943069],
+
+Cell["\<\
+In addition, some tensors usually have symmetries under a permutation of \
+indices.\
+\>", "Notes",
+ CellID->354796113],
+
+Cell[TextData[{
+ Cell[BoxData["SimplifyEinsteinNotation"], "InlineFormula"],
+ " is a function (",
+ StyleBox["still under construction",
+  FontVariations->{"Underline"->True}],
+ ") which aims at resolving this problem."
+}], "Notes",
+ CellID->647412678],
+
+Cell[TextData[{
+ Cell[BoxData["expression"], "InlineFormula"],
+ " is the sum of a product of tensors which is to be simplified. ",
+ Cell[BoxData["tensors"], "InlineFormula"],
+ " must be a list of patterns which match the tensors that might be contained \
+in ",
+ Cell[BoxData["expression"], "InlineFormula"],
+ " (see example below), and ",
+ Cell[BoxData["indices"], "InlineFormula"],
+ " should be a list with the free and dummy indices that may appear in ",
+ Cell[BoxData["expression"], "InlineFormula"],
+ "."
+}], "Notes",
+ CellID->302472905]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["EXAMPLES",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->555893594],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection",
+ CellID->153222041],
+
+Cell[TextData[{
+ "We know that A[i] B[i] and A[k] B[k] are the same, since both i and k are \
+dummy indices. However, ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " does not recognize this:"
+}], "ExampleText",
+ CellID->513681956],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", "i", "]"}], 
+   RowBox[{"B", "[", "i", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"A", "[", "k", "]"}], 
+   RowBox[{"B", "[", "k", "]"}]}]}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->196926373],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", "i", "]"}], " ", 
+   RowBox[{"B", "[", "i", "]"}]}], "+", 
+  RowBox[{
+   RowBox[{"A", "[", "k", "]"}], " ", 
+   RowBox[{"B", "[", "k", "]"}]}]}]], "Output",
+ ImageSize->{135, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->75923539]
+}, Open  ]],
+
+Cell["\<\
+The tensors here are A and B, and the indices are i,k (we may conservative \
+say that the list of potential indices is i,j,k). As such, the following code \
+will produce the desired simplification: \
+\>", "ExampleText",
+ CellID->349782582],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SimplifyEinsteinNotation", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"A", "[", "i", "]"}], 
+     RowBox[{"B", "[", "i", "]"}]}], "+", 
+    RowBox[{
+     RowBox[{"A", "[", "k", "]"}], 
+     RowBox[{"B", "[", "k", "]"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"A", "[", "_", "]"}], ",", 
+     RowBox[{"B", "[", "_", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "j", ",", "k"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->541856203],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  RowBox[{"A", "[", "i", "]"}], " ", 
+  RowBox[{"B", "[", "i", "]"}]}]], "Output",
+ ImageSize->{73, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->66144960]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["TUTORIALS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["Susyno Tutorial",
+ BaseStyle->"Link",
+ ButtonData->"paclet:Susyno/tutorial/SusynoTutorial"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 729},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"SimplifyEinsteinNotation - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2014, 12, 18, 10, 47, 45.9751214}", "context" -> "Susyno`", 
+    "keywords" -> {}, "index" -> True, "label" -> "Susyno Paclet Symbol", 
+    "language" -> "en", "paclet" -> "Susyno", "status" -> "None", "summary" -> 
+    "SimplifyEinsteinNotation[expression, tensors, indices] Simplify \
+expression with some tensors written in Einstein notation", "synonyms" -> {}, 
+    "title" -> "SimplifyEinsteinNotation", "type" -> "Symbol", "uri" -> 
+    "Susyno/ref/SimplifyEinsteinNotation"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "9.0 for Microsoft Windows (64-bit) (January 25, 2013)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5816, 174, 461, 13, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->555893594]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 10645, 337}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[617, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[696, 24, 178, 5, 70, "LinkTrail"],
+Cell[877, 31, 2362, 53, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[3242, 86, 67, 1, 70, "ObjectName",
+ CellID->1224892054],
+Cell[CellGroupData[{
+Cell[3334, 91, 583, 17, 70, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[3942, 112, 580, 17, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->305550792],
+Cell[4525, 131, 313, 7, 70, "Notes",
+ CellID->1067943069],
+Cell[4841, 140, 128, 4, 70, "Notes",
+ CellID->354796113],
+Cell[4972, 146, 251, 7, 70, "Notes",
+ CellID->647412678],
+Cell[5226, 155, 541, 13, 70, "Notes",
+ CellID->302472905]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5816, 174, 461, 13, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->555893594],
+Cell[CellGroupData[{
+Cell[6302, 191, 148, 5, 70, "ExampleSection",
+ CellID->153222041],
+Cell[6453, 198, 237, 7, 70, "ExampleText",
+ CellID->513681956],
+Cell[CellGroupData[{
+Cell[6715, 209, 244, 9, 70, "Input",
+ CellID->196926373],
+Cell[6962, 220, 342, 12, 36, "Output",
+ CellID->75923539]
+}, Open  ]],
+Cell[7319, 235, 249, 5, 70, "ExampleText",
+ CellID->349782582],
+Cell[CellGroupData[{
+Cell[7593, 244, 511, 17, 70, "Input",
+ CellID->541856203],
+Cell[8107, 263, 245, 8, 36, "Output",
+ CellID->66144960]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8413, 278, 419, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[8835, 292, 151, 3, 70, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[9001, 298, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

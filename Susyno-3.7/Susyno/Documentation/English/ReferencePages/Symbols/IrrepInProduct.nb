@@ -1,0 +1,629 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22247,        621]
+NotebookOptionsPosition[     17190,        510]
+NotebookOutlinePosition[     18978,        557]
+CellTagsIndexPosition[     18893,        552]
+WindowTitle->IrrepInProduct - Wolfram Mathematica
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 
+   0}},ExpressionUUID->"65a1535c-e3f6-48e3-b9ca-d82170f57b30"],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:Susyno/guide/Susyno"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail",ExpressionUUID->"5d88664e-790d-4ab3-866a-a5da93a2de03"],
+
+Cell[BoxData[GridBox[{
+   {Cell["SUSYNO PACLET SYMBOL", "PacletNameCell",ExpressionUUID->
+     "d547104c-2804-4b79-83f8-d208691e5523"], Cell[TextData[Cell[BoxData[
+     ActionMenuBox[
+      FrameBox["\<\"URL \[RightGuillemet]\"\>",
+       StripOnInput->False], {"\<\"Susyno/ref/IrrepInProduct\"\>":>
+      None, "\<\"Copy Mathematica url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell["Susyno/ref/IrrepInProduct"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+      Delimiter, "\<\"Copy web url\"\>":>
+      Module[{DocumentationSearch`Private`nb$}, 
+       DocumentationSearch`Private`nb$ = NotebookPut[
+          Notebook[{
+            Cell[
+             BoxData[
+              MakeBoxes[
+               Hyperlink[
+               "http://reference.wolfram.com/mathematica/Susyno/ref/\
+IrrepInProduct.html"], StandardForm]], "Input", TextClipboardType -> 
+             "PlainText"]}, Visible -> False]]; 
+       SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+       FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+       NotebookClose[DocumentationSearch`Private`nb$]; 
+       Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+        NotebookLocate[{
+          URL[
+           StringJoin[
+           "http://reference.wolfram.com/mathematica/", 
+            "Susyno/ref/IrrepInProduct", ".html"]], None}]}]},
+      Appearance->None,
+      MenuAppearance->Automatic]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "738c6ea9-cb25-40ce-bc78-7881cf9a5f9a"]], "AnchorBar",ExpressionUUID->
+     "a9f3645c-3db5-4c04-904e-798b1ca4ade5"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"28a99fb4-bdb1-4a6f-93b5-d40272c88895"],
+
+Cell[CellGroupData[{
+
+Cell["IrrepInProduct", "ObjectName",
+ CellID->1224892054,ExpressionUUID->"26d9345d-38aa-4847-a9ff-4d59d2cc184b"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"IrrepInProduct", "[", 
+       RowBox[{"group", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"rep1", ",", " ", "rep2", ",", " ", "rep3"}], "}"}]}], 
+       "]"}]], "InlineFormula",ExpressionUUID->
+      "7b970465-8269-40de-87ba-78a0ea778e43"],
+     " \[LineSeparator]Computes generalized Clebsch-Gordon coefficients; it \
+computes the combinations of ",
+     Cell[BoxData[
+     "rep1"], "InlineFormula",ExpressionUUID->
+      "b6311ed3-1fb8-4fd3-ba56-f2864d79f405"],
+     " x ",
+     Cell[BoxData[
+     "rep2"], "InlineFormula",ExpressionUUID->
+      "96ef6a8e-5316-45cb-ad00-6be5579f0c52"],
+     " which transform as a ",
+     Cell[BoxData[
+     "rep3"], "InlineFormula",ExpressionUUID->
+      "4f48e319-bdc1-4353-be40-612677f12d0e"],
+     " of the gauge group."
+    }],ExpressionUUID->"dd36ce9d-8338-4acd-b5d3-c99dc458c90d"]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436,ExpressionUUID->"2e342d0a-6a69-4fdf-bc50-8fa02752979b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"6a77ec77-d068-4ffa-97d2-083569ec75ee"]], \
+"NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->486636237,ExpressionUUID->"daaae2d6-511d-431c-906f-18db778b1ef4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+ "group"], "InlineFormula",ExpressionUUID->
+  "3bd5073c-bb00-4841-967e-783da07d71cd"],
+ " should be the ",
+ ButtonBox["Cartan matrix",
+  BaseStyle->"Link",
+  ButtonData->"paclet:Susyno/ref/CartanMatrix"],
+ " of the intended group."
+}], "Notes",
+ CellID->1067943069,ExpressionUUID->"6bb52616-3fa9-435a-b70e-82f40748c61c"],
+
+Cell[TextData[{
+ "Each representation ",
+ Cell[BoxData[
+ "rep"], "InlineFormula",ExpressionUUID->
+  "50af20d9-13e7-4f89-96e4-05394ec1424d"],
+ " should be a list of non-negative integers (Dynkin coefficients)."
+}], "Notes",
+ CellID->41030773,ExpressionUUID->"715ecd8c-b706-4732-94dd-9c3e8a4a1db1"],
+
+Cell["\<\
+There is no limit to the number of representations being multiplied, although \
+the calculation becomes slower as their number increases.\
+\>", "Notes",
+ CellID->221237370,ExpressionUUID->"924a735a-f3fa-4ea0-9d4b-0c3ca25c744b"],
+
+Cell[TextData[{
+ "The optional input ",
+ Cell[BoxData[
+  RowBox[{"Conjugations", "->", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"conjugate", " ", "rep1"}], ",", " ", 
+     RowBox[{"conjugate", " ", "rep2"}], ",", " ", 
+     RowBox[{"conjugate", " ", "rep3"}]}], "}"}]}]], "InlineFormula",
+  ExpressionUUID->"b0ddc62b-0f76-4425-82f5-a777a2181cbe"],
+ "  can be passed to this function, where ",
+ Cell[BoxData[
+  RowBox[{"conjugate", " ", "repI"}]], "InlineFormula",ExpressionUUID->
+  "9d0abb58-8644-41a7-a6c3-b21a105cd36d"],
+ " can be either ",
+ Cell[BoxData[
+ "True"], "InlineFormula",ExpressionUUID->
+  "58eaa344-3a4f-418c-b7b6-12df2f7a0ff3"],
+ " or ",
+ Cell[BoxData[
+ "False"], "InlineFormula",ExpressionUUID->
+  "6b146c71-2aca-4f97-b156-1b8f3b3a62a6"],
+ ". If ",
+ Cell[BoxData[
+ "True"], "InlineFormula",ExpressionUUID->
+  "0491a5e8-ceb1-4e6b-bcd0-fdfb3a838105"],
+ ", the conjugate representation of ",
+ Cell[BoxData[
+ "repI"], "InlineFormula",ExpressionUUID->
+  "a7123f38-5797-42d1-a6c5-24276db57e0f"],
+ " will be considered instead of ",
+ Cell[BoxData[
+ "repI"], "InlineFormula",ExpressionUUID->
+  "d071512a-a2ef-4c22-9862-f8ad523a0a5d"],
+ "."
+}], "Notes",
+ CellID->400920173,ExpressionUUID->"9104ae7c-df4a-4603-ae57-b4a3e68aa25f"],
+
+Cell[TextData[{
+ "There is also the possibility of ",
+ Cell[BoxData[
+ "group"], "InlineFormula",ExpressionUUID->
+  "ff6e65af-184e-4aba-b1b7-06748cec5bf0"],
+ " being a list ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{"group1", ",", "group2", ",", "..."}], "}"}]], "InlineFormula",
+  ExpressionUUID->"56fd7abc-792b-4556-a733-91d5bd2c212e"],
+ " and each ",
+ Cell[BoxData[
+ "rep"], "InlineFormula",ExpressionUUID->
+  "7bf2f96e-3c29-44b0-9e58-e621e79ff714"],
+ " a list ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{"rep_group1", ",", "rep_group2", ",", "..."}], "}"}]], 
+  "InlineFormula",ExpressionUUID->"9f113d80-ae44-4deb-9206-88c442268838"],
+ "."
+}], "Notes",
+ CellID->75953507,ExpressionUUID->"bbec6231-06d6-499e-85e0-42c75d53253c"],
+
+Cell[TextData[{
+ "The output of this method is a list ",
+ Cell[BoxData[
+  RowBox[{"{", 
+   RowBox[{"combination1", ",", "combination2", ",", "..."}], "}"}]], 
+  "InlineFormula",ExpressionUUID->"1a955f88-5b69-4f6f-b33d-491fb1121a12"],
+ " where it is assumed that ",
+ Cell[BoxData[
+ "a"], "InlineFormula",ExpressionUUID->"689ff134-44fe-468f-93ef-473f2f42f93f"],
+ " is a field transforming as ",
+ Cell[BoxData[
+ "rep1"], "InlineFormula",ExpressionUUID->
+  "3ec3988b-5432-4795-b91f-2931e4cee8be"],
+ ",  ",
+ Cell[BoxData[
+ "b"], "InlineFormula",ExpressionUUID->"c66fd0c9-2de0-4c15-857b-9aad2ae0e4b4"],
+ " as ",
+ Cell[BoxData[
+ "rep2"], "InlineFormula",ExpressionUUID->
+  "a353c1d9-3851-490a-81e4-3788bf7cb6ae"],
+ ". Each of the ",
+ Cell[BoxData[
+ "combinationI"], "InlineFormula",ExpressionUUID->
+  "fe4386dd-309f-4a65-b819-26726648bb9d"],
+ " transforms as ",
+ Cell[BoxData[
+ "rep3"], "InlineFormula",ExpressionUUID->
+  "3010fa99-1d34-4299-be44-dbb1938ffff6"],
+ ". The fields  ",
+ Cell[BoxData[
+ "a"], "InlineFormula",ExpressionUUID->"b2907a0a-62ac-4b38-96c6-52ddc0bf0fde"],
+ "  and  ",
+ Cell[BoxData[
+ "b"], "InlineFormula",ExpressionUUID->"1002a6fb-b758-48da-b411-0850e6c8e691"],
+ " have group indices: ",
+ Cell[BoxData[
+  RowBox[{"a", "[", 
+   RowBox[{"ind_group1", ",", " ", "ind_group2", ",", "..."}], "]"}]], 
+  "InlineFormula",ExpressionUUID->"cbc18a6d-0510-4e98-8a9e-46169e9f287c"],
+ ", ",
+ Cell[BoxData[
+  RowBox[{"b", "[", 
+   RowBox[{"ind_group1", ",", " ", "ind_group2", ",", "..."}], "]"}]], 
+  "InlineFormula",ExpressionUUID->"2f4c83d1-95a2-4df3-ae49-b2ce83602235"],
+ "."
+}], "Notes",
+ CellID->10758554,ExpressionUUID->"a32f5b90-9bcc-4a3a-b0b1-b543721fd0b5"],
+
+Cell[TextData[{
+ "If  ",
+ Cell[BoxData[
+ "rep1"], "InlineFormula",ExpressionUUID->
+  "afd1e33d-6da7-4652-bbb6-27382789d8c2"],
+ " x ",
+ Cell[BoxData[
+ "rep2"], "InlineFormula",ExpressionUUID->
+  "e7595b9b-c2c1-4993-a836-a135b714d338"],
+ " does not contain any copy of ",
+ Cell[BoxData[
+ "rep3"], "InlineFormula",ExpressionUUID->
+  "78c0bfb5-33c8-4d20-86c9-62a8eac84c42"],
+ ",  ",
+ Cell[BoxData[
+  RowBox[{"{", "}"}]], "InlineFormula",ExpressionUUID->
+  "96d422ce-b165-40d8-a8ab-53f1b43700e1"],
+ " is returned."
+}], "Notes",
+ CellID->335181877,ExpressionUUID->"da1bc2c5-eb1a-417c-b748-c38bd4daca21"],
+
+Cell["\<\
+Clearly this method must assume a particular basis for each representation so \
+the results are basis dependent.\
+\>", "Notes",
+ CellID->898809850,ExpressionUUID->"f8ecbbe8-4874-42c7-912b-246976203b9f"],
+
+Cell[TextData[{
+ "This method is similar to ",
+ Cell[BoxData[
+  ButtonBox["Invariants",
+   BaseStyle->"Link",
+   ButtonData->"paclet:Susyno/ref/Invariants"]], "InlineFormula",
+  ExpressionUUID->"d4522f80-7f90-44bb-9591-7075dbf89cff"],
+ ": it gives generalized Clebsch-Gordon coefficients, as it works for any \
+gauge group (not just SU(2))."
+}], "Notes",
+ CellID->329977022,ExpressionUUID->"f305cee2-2a1f-48f8-8597-fd13dbcb7004"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["EXAMPLES",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->625561808,ExpressionUUID->"0b09a88f-c07f-4f93-b1f8-016b3464b123"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "4cde5199-6a78-4edc-bccc-96dc47880667"]
+}], "ExampleSection",
+ CellID->329731734,ExpressionUUID->"17471151-6f03-40ff-9bc6-c955de6f88f7"],
+
+Cell["\<\
+Two SU(2) doublets (={1}) contain a singlet (={0}) and a triplet (={2}). The \
+explicit form of these combinations can be checked with this method:\
+\>", "Notes",
+ CellID->315923061,ExpressionUUID->"69a39bfd-e5aa-4605-8848-cbc1a19e87eb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<Gauge singlet in {1}x{1}:\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"IrrepInProduct", "[", 
+    RowBox[{"SU2", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", "1", "}"}], ",", 
+       RowBox[{"{", "1", "}"}], ",", 
+       RowBox[{"{", "0", "}"}]}], "}"}]}], "]"}], "[", 
+   RowBox[{"[", "1", "]"}], "]"}], "//", 
+  "MatrixForm"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<Gauge triplet in {1}x{1}:\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"IrrepInProduct", "[", 
+    RowBox[{"SU2", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", "1", "}"}], ",", 
+       RowBox[{"{", "1", "}"}], ",", 
+       RowBox[{"{", "2", "}"}]}], "}"}]}], "]"}], "[", 
+   RowBox[{"[", "1", "]"}], "]"}], "//", "MatrixForm"}]}], "Input",
+ CellLabel->"In[30]:=",
+ CellID->275367989,ExpressionUUID->"acd03aca-a118-46c5-88a4-f79152e639cc"],
+
+Cell[BoxData["\<\"Gauge singlet in {1}x{1}:\"\>"], "Print",
+ CellLabel->"During evaluation of In[30]:=",
+ CellID->305983496,ExpressionUUID->"a224068f-b291-46b9-88b6-7d194fafd4c8"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", "2", "]"}], " ", 
+         RowBox[{"b", "[", "1", "]"}]}], "-", 
+        RowBox[{
+         RowBox[{"a", "[", "1", "]"}], " ", 
+         RowBox[{"b", "[", "2", "]"}]}]}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[
+    SparseArray[
+    Automatic, {1}, 0, {
+     1, {{0, 1}, {{1}}}, {
+      Susyno`LieGroups`a[2] Susyno`LieGroups`b[1] - Susyno`LieGroups`a[1] 
+       Susyno`LieGroups`b[2]}}]]]]], "Output",
+ ImageSize->{155, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[31]//MatrixForm=",
+ CellID->365979193,ExpressionUUID->"f7730028-6a18-4eca-bd73-4d141f6f36d9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"\"\>"], "Print",
+ CellLabel->"During evaluation of In[30]:=",
+ CellID->107395926,ExpressionUUID->"f6ab29cf-22d4-481a-8b6d-41d4ca008da0"],
+
+Cell[BoxData["\<\"Gauge triplet in {1}x{1}:\"\>"], "Print",
+ CellLabel->"During evaluation of In[30]:=",
+ CellID->248264831,ExpressionUUID->"a07c3bc1-50f1-4429-9d02-ff0a727eeba4"]
+}, Open  ]],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {
+       RowBox[{
+        SqrtBox["2"], " ", 
+        RowBox[{"a", "[", "1", "]"}], " ", 
+        RowBox[{"b", "[", "1", "]"}]}]},
+      {
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "[", "2", "]"}], " ", 
+         RowBox[{"b", "[", "1", "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"a", "[", "1", "]"}], " ", 
+         RowBox[{"b", "[", "2", "]"}]}]}]},
+      {
+       RowBox[{
+        SqrtBox["2"], " ", 
+        RowBox[{"a", "[", "2", "]"}], " ", 
+        RowBox[{"b", "[", "2", "]"}]}]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[
+    SparseArray[
+    Automatic, {3}, 0, {
+     1, {{0, 3}, {{3}, {1}, {2}}}, {
+      2^Rational[1, 2] Susyno`LieGroups`a[2] Susyno`LieGroups`b[2], 
+       2^Rational[1, 2] Susyno`LieGroups`a[1] Susyno`LieGroups`b[1], 
+       Susyno`LieGroups`a[2] Susyno`LieGroups`b[1] + 
+       Susyno`LieGroups`a[1] Susyno`LieGroups`b[2]}}]]]]], "Output",
+ ImageSize->{155, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[34]//MatrixForm=",
+ CellID->462333951,ExpressionUUID->"54a6c99f-d7c9-4020-bd11-6b62510468cb"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["RELATED LINKS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "RelatedLinksSection",
+ CellID->1584193535,ExpressionUUID->"15429a1f-65f0-44d9-8efe-2068c99f52fb"],
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox["Invariants",
+  BaseStyle->"Link",
+  ButtonData->
+   "paclet:Susyno/ref/Invariants"]], \
+"InlineFormula",ExpressionUUID->"74eb0956-a34a-4653-8bce-2ca8a55aed0a"]], \
+"RelatedLinks",
+ CellID->1038487239,ExpressionUUID->"42f56dd8-e80e-4fbd-b5bc-1a95c75a432f"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"c4df53cb-8c41-4e94-a39f-aaddbc35a9eb"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 729},
+WindowMargins->{{613, Automatic}, {Automatic, 259}},
+WindowTitle->"IrrepInProduct - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2014, 12, 18, 10, 47, 25.4744409}", "context" -> "Susyno`", 
+    "keywords" -> {}, "index" -> True, "label" -> "Susyno Paclet Symbol", 
+    "language" -> "en", "paclet" -> "Susyno", "status" -> "None", "summary" -> 
+    "IrrepInProduct[group, {rep1, rep2, rep3}] Computes generalized \
+Clebsch-Gordon coefficients; it computes the combinations of rep1 x rep2 \
+which transform as a rep3 of the gauge group.", "synonyms" -> {}, "title" -> 
+    "IrrepInProduct", "type" -> "Symbol", "uri" -> 
+    "Susyno/ref/IrrepInProduct", "WorkflowDockedCell" -> ""}, "LinkTrails" -> 
+  "", "SearchTextTranslated" -> "", "NewStyles" -> False},
+CellContext->"Global`",
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "12.0 for Microsoft Windows (64-bit) (April 8, 2019)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[10923, 316, 516, 13, 35, "PrimaryExamplesSection",ExpressionUUID->"0b09a88f-c07f-4f93-b1f8-016b3464b123",
+   CellTags->"PrimaryExamplesSection",
+   CellID->625561808]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 18694, 545}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[608, 21, 135, 2, 3, "SymbolColorBar",ExpressionUUID->"65a1535c-e3f6-48e3-b9ca-d82170f57b30"],
+Cell[746, 25, 233, 5, 19, "LinkTrail",ExpressionUUID->"5d88664e-790d-4ab3-866a-a5da93a2de03"],
+Cell[982, 32, 2105, 44, 53, "AnchorBarGrid",ExpressionUUID->"28a99fb4-bdb1-4a6f-93b5-d40272c88895",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[3112, 80, 112, 1, 52, "ObjectName",ExpressionUUID->"26d9345d-38aa-4847-a9ff-4d59d2cc184b",
+ CellID->1224892054],
+Cell[3227, 83, 1140, 29, 131, "Usage",ExpressionUUID->"2e342d0a-6a69-4fdf-bc50-8fa02752979b",
+ CellID->982511436]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4404, 117, 696, 19, 47, "NotesSection",ExpressionUUID->"daaae2d6-511d-431c-906f-18db778b1ef4",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->486636237],
+Cell[5103, 138, 351, 10, 70, "Notes",ExpressionUUID->"6bb52616-3fa9-435a-b70e-82f40748c61c",
+ CellID->1067943069],
+Cell[5457, 150, 296, 7, 70, "Notes",ExpressionUUID->"715ecd8c-b706-4732-94dd-9c3e8a4a1db1",
+ CellID->41030773],
+Cell[5756, 159, 237, 4, 70, "Notes",ExpressionUUID->"924a735a-f3fa-4ea0-9d4b-0c3ca25c744b",
+ CellID->221237370],
+Cell[5996, 165, 1238, 36, 70, "Notes",ExpressionUUID->"9104ae7c-df4a-4603-ae57-b4a3e68aa25f",
+ CellID->400920173],
+Cell[7237, 203, 732, 21, 70, "Notes",ExpressionUUID->"bbec6231-06d6-499e-85e0-42c75d53253c",
+ CellID->75953507],
+Cell[7972, 226, 1667, 46, 70, "Notes",ExpressionUUID->"a32f5b90-9bcc-4a3a-b0b1-b543721fd0b5",
+ CellID->10758554],
+Cell[9642, 274, 597, 19, 70, "Notes",ExpressionUUID->"da1bc2c5-eb1a-417c-b748-c38bd4daca21",
+ CellID->335181877],
+Cell[10242, 295, 212, 4, 70, "Notes",ExpressionUUID->"f8ecbbe8-4874-42c7-912b-246976203b9f",
+ CellID->898809850],
+Cell[10457, 301, 429, 10, 70, "Notes",ExpressionUUID->"f305cee2-2a1f-48f8-8597-fd13dbcb7004",
+ CellID->329977022]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[10923, 316, 516, 13, 35, "PrimaryExamplesSection",ExpressionUUID->"0b09a88f-c07f-4f93-b1f8-016b3464b123",
+ CellTags->"PrimaryExamplesSection",
+ CellID->625561808],
+Cell[CellGroupData[{
+Cell[11464, 333, 261, 6, 29, "ExampleSection",ExpressionUUID->"17471151-6f03-40ff-9bc6-c955de6f88f7",
+ CellID->329731734],
+Cell[11728, 341, 247, 4, 55, "Notes",ExpressionUUID->"69a39bfd-e5aa-4605-8848-cbc1a19e87eb",
+ CellID->315923061],
+Cell[CellGroupData[{
+Cell[12000, 349, 1067, 31, 91, "Input",ExpressionUUID->"acd03aca-a118-46c5-88a4-f79152e639cc",
+ CellID->275367989],
+Cell[13070, 382, 179, 2, 22, "Print",ExpressionUUID->"a224068f-b291-46b9-88b6-7d194fafd4c8",
+ CellID->305983496],
+Cell[13252, 386, 1100, 33, 49, "Output",ExpressionUUID->"f7730028-6a18-4eca-bd73-4d141f6f36d9",
+ CellID->365979193],
+Cell[CellGroupData[{
+Cell[14377, 423, 154, 2, 22, "Print",ExpressionUUID->"f6ab29cf-22d4-481a-8b6d-41d4ca008da0",
+ CellID->107395926],
+Cell[14534, 427, 179, 2, 22, "Print",ExpressionUUID->"a07c3bc1-50f1-4429-9d02-ff0a727eeba4",
+ CellID->248264831]
+}, Open  ]],
+Cell[14728, 432, 1524, 45, 93, "Output",ExpressionUUID->"54a6c99f-d7c9-4020-bd11-6b62510468cb",
+ CellID->462333951]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16313, 484, 482, 12, 72, "RelatedLinksSection",ExpressionUUID->"15429a1f-65f0-44d9-8efe-2068c99f52fb",
+ CellID->1584193535],
+Cell[16798, 498, 295, 7, 21, "RelatedLinks",ExpressionUUID->"42f56dd8-e80e-4fbd-b5bc-1a95c75a432f",
+ CellID->1038487239]
+}, Open  ]],
+Cell[17108, 508, 78, 0, 41, "FooterCell",ExpressionUUID->"c4df53cb-8c41-4e94-a39f-aaddbc35a9eb"]
+}
+]
+*)
+

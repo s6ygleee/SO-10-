@@ -1,0 +1,1154 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" ", "SymbolColorBar",
+ CellMargins->{{Inherited, Inherited}, {-5, 0}}],
+
+Cell[TextData[{
+ ButtonBox["Mathematica",
+  BaseStyle->{"Link", "LinkTrail"},
+  ButtonData->"paclet:Susyno/guide/Susyno"],
+ StyleBox[" > ", "LinkTrailSeparator"]
+}], "LinkTrail"],
+
+Cell[BoxData[GridBox[{
+   {Cell["SUSYNO PACLET SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"Tutorials \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno Tutorial\"\>":>
+       Documentation`HelpLookup["paclet:Susyno/tutorial/SusynoTutorial"]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox["\<\"URL \[RightGuillemet]\"\>",
+        StripOnInput->False], {"\<\"Susyno/ref/RepMatrices\"\>":>
+       None, "\<\"Copy Mathematica url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["Susyno/ref/RepMatrices"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web url\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/mathematica/Susyno/ref/\
+RepMatrices.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web url\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+            "http://reference.wolfram.com/mathematica/", 
+             "Susyno/ref/RepMatrices", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell["RepMatrices", "ObjectName",
+ CellID->1224892054],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"RepMatrices", "[", 
+       RowBox[{"group", ",", "rep"}], "]"}]], "InlineFormula"],
+     " \[LineSeparator]Returns the matrices of a representation ",
+     Cell[BoxData["rep"], "InlineFormula"],
+     " of ",
+     Cell[BoxData["group"], "InlineFormula"],
+     " "
+    }]]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"RepMatrices", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"group1", ",", "group2", ",", "..."}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"rep_group1", ",", "rep_group2", ",", "..."}], "}"}]}], 
+       "]"}]], "InlineFormula"],
+     "\[LineSeparator]Returns the matrices of representation ",
+     Cell[BoxData["rep_group1"], "InlineFormula"],
+     " of ",
+     Cell[BoxData["group1"], "InlineFormula"],
+     ",  ",
+     Cell[BoxData["rep_group2"], "InlineFormula"],
+     " of ",
+     Cell[BoxData["group2"], "InlineFormula"],
+     ", ..."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {None, {None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[
+  FrameBox[
+   StyleBox[
+    RowBox[{"MORE", " ", "INFORMATION"}], "NotesFrameText"],
+   StripOnInput->False],
+  Appearance->{Automatic, None},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->"Preemptive"]]]], "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->340788281],
+
+Cell[TextData[{
+ "The ",
+ Cell[BoxData["group"], "InlineFormula"],
+ "s should be the ",
+ ButtonBox["Cartan matrices",
+  BaseStyle->"Link",
+  ButtonData->"paclet:Susyno/ref/CartanMatrix"],
+ " of the intended groups."
+}], "Notes",
+ CellID->1067943069],
+
+Cell[TextData[{
+ "Each representation ",
+ Cell[BoxData["rep"], "InlineFormula"],
+ " should be a list of non-negative integers (Dynkin coefficients)."
+}], "Notes",
+ CellID->41030773],
+
+Cell[TextData[{
+ "In the output the results are in ",
+ Cell[BoxData[
+  ButtonBox["SparseArray",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/SparseArray"]], "InlineFormula"],
+ " form. Use the ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " built-in commands ",
+ Cell[BoxData[
+  ButtonBox["Normal",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Normal"]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  ButtonBox["MatrixForm",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/MatrixForm"]], "InlineFormula"],
+ " to convert the results if needed."
+}], "Notes",
+ CellID->812326107],
+
+Cell["\<\
+This method clearly must assume a particular basis for each representation so \
+the results are basis dependent.\
+\>", "Notes",
+ CellID->18412127],
+
+Cell[TextData[{
+ "The matrices {",
+ Cell[BoxData[
+  SubscriptBox["M", "i"]], "InlineFormula"],
+ "} given by this method are in conformity with the usual requirements in \
+particle physics: ",
+ Cell[BoxData[
+  RowBox[{
+   SubsuperscriptBox["M", "a", "\[Dagger]"], "=", 
+   SubscriptBox["M", "a"]}]], "InlineFormula"],
+ " ; ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"Tr", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["M", "a"], 
+      SubscriptBox["M", "b"]}], ")"}]}], "="}]], "InlineFormula"],
+ "S(rep) ",
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["\[Delta]", "ab"], " "}]], "InlineFormula"],
+ " ; ",
+ Cell[BoxData[
+  UnderscriptBox["\[Sum]", "a"]], "InlineFormula"],
+ Cell[BoxData[
+  SubscriptBox["M", "a"]], "InlineFormula"],
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["M", "a"], "="}]], "InlineFormula"],
+ "C(rep) ",
+ StyleBox["1",
+  FontWeight->"Bold"],
+ "."
+}], "Notes",
+ CellID->288308808]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["EXAMPLES",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->157754677],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(2)", "ExampleCount"]
+}], "ExampleSection",
+ CellID->257072810],
+
+Cell["SU(2)'s doublet representation [={1}] matrices:", "ExampleText",
+ CellID->513681956],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"matrices", "=", 
+  RowBox[{"RepMatrices", "[", 
+   RowBox[{"SU2", ",", 
+    RowBox[{"{", "1", "}"}]}], "]"}]}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->196926373],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[
+    RowBox[{"SparseArray", "[", 
+     RowBox[{
+      InterpretationBox[
+       RowBox[{"\<\"<\"\>", "\[InvisibleSpace]", "2", 
+        "\[InvisibleSpace]", "\<\">\"\>"}],
+       SequenceForm["<", 2, ">"],
+       Editable->False], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}]}], "]"}],
+    False,
+    Editable->False], ",", 
+   TagBox[
+    RowBox[{"SparseArray", "[", 
+     RowBox[{
+      InterpretationBox[
+       RowBox[{"\<\"<\"\>", "\[InvisibleSpace]", "2", 
+        "\[InvisibleSpace]", "\<\">\"\>"}],
+       SequenceForm["<", 2, ">"],
+       Editable->False], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}]}], "]"}],
+    False,
+    Editable->False], ",", 
+   TagBox[
+    RowBox[{"SparseArray", "[", 
+     RowBox[{
+      InterpretationBox[
+       RowBox[{"\<\"<\"\>", "\[InvisibleSpace]", "2", 
+        "\[InvisibleSpace]", "\<\">\"\>"}],
+       SequenceForm["<", 2, ">"],
+       Editable->False], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "2"}], "}"}]}], "]"}],
+    False,
+    Editable->False]}], "}"}]], "Output",
+ ImageSize->{526, 15},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->128080352]
+}, Open  ]],
+
+Cell["\<\
+Use Normal or MatrixForm, matrix by matrix, to convert the results:\
+\>", "ExampleText",
+ CellID->349147845],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Normal", " ", "/@", " ", "matrices"}], "\[IndentingNewLine]", 
+ RowBox[{"MatrixForm", " ", "/@", " ", "matrices"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->4735082],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       FractionBox["1", "2"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", "0"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", 
+        FractionBox["\[ImaginaryI]", "2"]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["\[ImaginaryI]", "2"], ",", "0"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}]}], "}"}]}], "}"}]}], "}"}]], "Output",
+ ImageSize->{391, 32},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->28023960],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"0", 
+        FractionBox["1", "2"]},
+       {
+        FractionBox["1", "2"], "0"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[
+     SparseArray[
+      Automatic, {2, 2}, 0, {
+       1, {{0, 1, 2}, {{2}, {1}}}, {Rational[1, 2], Rational[1, 2]}}]]]], ",", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"0", 
+        RowBox[{"-", 
+         FractionBox["\[ImaginaryI]", "2"]}]},
+       {
+        FractionBox["\[ImaginaryI]", "2"], "0"}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[
+     SparseArray[
+      Automatic, {2, 2}, 0, {
+       1, {{0, 1, 2}, {{2}, {1}}}, {
+        Complex[0, Rational[-1, 2]], Complex[0, Rational[1, 2]]}}]]]], ",", 
+   TagBox[
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        FractionBox["1", "2"], "0"},
+       {"0", 
+        RowBox[{"-", 
+         FractionBox["1", "2"]}]}
+      },
+      GridBoxAlignment->{
+       "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+        "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+    Function[BoxForm`e$, 
+     MatrixForm[
+     SparseArray[
+      Automatic, {2, 2}, 0, {
+       1, {{0, 1, 2}, {{1}, {2}}}, {Rational[1, 2], Rational[-1, 2]}}]]]]}], 
+  "}"}]], "Output",
+ ImageSize->{200, 49},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->433609028]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->86916524],
+
+Cell["\<\
+SU(3)'s fundamental representation [={1,0}] matrices are 'almost' 1/2 the \
+Gell-Mann matrices. The difference is due to a the choice of basis:\
+\>", "ExampleText",
+ CellID->692636],
+
+Cell[CellGroupData[{
+
+Cell["MatrixForm /@ RepMatrices[SU3, {1,0}]", "Input",
+ CellLabel->"In[1]:=",
+ CellID->101142205],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+    "], {{0, 162}, {407, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  BaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{407, 162},
+  PlotRange->{{0, 407}, {0, 162}}]], "Output",
+ ImageSize->{411, 162},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[1]=",
+ CellID->226805460]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[TextData[{
+   "Properties & Relations",
+   "\[NonBreakingSpace]\[NonBreakingSpace]",
+   Cell["(1)", "ExampleCount"]
+  }], "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell["The conventions for the matrices are correct. Example:", "ExampleText",
+ CellID->633240428],
+
+Cell["matrices=RepMatrices[SO10,{1,0,0,0,0}];", "Input",
+ CellLabel->"In[1]:=",
+ CellID->661675421],
+
+Cell["\<\
+{1,0,0,0,0} is the fundamental of SO(10) so these are 45 10x10 matrices. \
+Let's check hermiticity:\
+\>", "ExampleText",
+ CellID->356242323],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Table[matrices[[i]]==ConjugateTranspose[matrices[[i]]],{i,45}]\
+\>", "Input",
+ CellLabel->"In[2]:=",
+ CellID->619171038],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", 
+   ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", 
+   "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", 
+   ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", 
+   "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", 
+   ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", 
+   "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", 
+   ",", "True", ",", "True", ",", "True", ",", "True", ",", "True", ",", 
+   "True"}], "}"}]], "Output",
+ ImageSize->{476, 67},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->21882826]
+}, Open  ]],
+
+Cell["\<\
+This shows that there is no difference between the matrices and their \
+conjugate transpose. Now the Casimir condition:\
+\>", "ExampleText",
+ CellID->94195855],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Print[\"Casimir of {1,0,0,0,0} of SO(10): \", Casimir[SO10,{1,0,0,0,0}]]
+Print[\"Sum of all representation matrices squared:\"]
+Sum[matrices[[i]].matrices[[i]],{i,45}]//MatrixForm\
+\>", "Input",
+ CellLabel->"In[3]:=",
+ CellID->159557486],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Casimir of {1,0,0,0,0} of SO(10): \"\>", "\[InvisibleSpace]", 
+   FractionBox["9", "2"]}],
+  SequenceForm["Casimir of {1,0,0,0,0} of SO(10): ", 
+   Rational[9, 2]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[7]:=",
+ CellID->356764962],
+
+Cell[BoxData["\<\"Sum of all representation matrices squared:\"\>"], "Print",
+ CellLabel->"During evaluation of In[7]:=",
+ CellID->929148463]
+}, Open  ]],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      FractionBox["9", "2"], "0", "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", 
+      FractionBox["9", "2"], "0", "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", 
+      FractionBox["9", "2"], "0", "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", 
+      FractionBox["9", "2"], "0", "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", 
+      FractionBox["9", "2"], "0", "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", 
+      FractionBox["9", "2"], "0", "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", 
+      FractionBox["9", "2"], "0", "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", 
+      FractionBox["9", "2"], "0", "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", 
+      FractionBox["9", "2"], "0"},
+     {"0", "0", "0", "0", "0", "0", "0", "0", "0", 
+      FractionBox["9", "2"]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[
+   SparseArray[
+    Automatic, {10, 10}, 0, {
+     1, {{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, {{1}, {2}, {3}, {4}, {5}, {6}, {
+       7}, {8}, {9}, {10}}}, {
+      Rational[9, 2], Rational[9, 2], Rational[9, 2], Rational[9, 2], 
+       Rational[9, 2], Rational[9, 2], Rational[9, 2], Rational[9, 2], 
+       Rational[9, 2], Rational[9, 2]}}]]]]], "Output",
+ ImageSize->{196, 247},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[3]//MatrixForm=",
+ CellID->392809554]
+}, Open  ]],
+
+Cell["Finally the trace condition:", "ExampleText",
+ CellID->12390622],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Sr=DynkinIndex[SO10,{1,0,0,0,0}];
+Print[\"S(rep) of rep={1,0,0,0,0} of SO(10): \", Sr]
+Print[\"Tr(Mi Mj):\"]
+Table[Tr[matrices[[i]].matrices[[j]]],{i,45},{j,45}]//MatrixForm\
+\>", "Input",
+ CellLabel->"In[4]:=",
+ CellID->105951781],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"S(rep) of rep={1,0,0,0,0} of SO(10): \"\>", 
+   "\[InvisibleSpace]", "1"}],
+  SequenceForm["S(rep) of rep={1,0,0,0,0} of SO(10): ", 1],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->115580194],
+
+Cell[BoxData["\<\"Tr(Mi Mj):\"\>"], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->173705802]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+    "], {{0, 672}, {687, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  BaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{687, 672},
+  PlotRange->{{0, 687}, {0, 672}}]], "Output",
+ ImageSize->{691, 672},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[4]//MatrixForm=",
+ CellID->334325817]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["TUTORIALS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["Susyno Tutorial",
+ BaseStyle->"Link",
+ ButtonData->"paclet:Susyno/tutorial/SusynoTutorial"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[ButtonBox["RELATED LINKS",
+ BaseStyle->None,
+ Appearance->{Automatic, None},
+ Evaluator->None,
+ Method->"Preemptive",
+ ButtonFunction:>(FrontEndExecute[{
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], All, ButtonCell], 
+    FrontEndToken["OpenCloseGroup"], 
+    FrontEnd`SelectionMove[
+     FrontEnd`SelectedNotebook[], After, 
+     CellContents]}]& )]], "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Normal",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Normal"]], "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  ButtonBox["MatrixForm",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/MatrixForm"]], "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  ButtonBox["RepMinimalMatrices",
+   BaseStyle->"Link",
+   ButtonData->"paclet:Susyno/ref/RepMinimalMatrices"]], "InlineFormula"],
+ "\[NonBreakingSpace]",
+ StyleBox["\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+  "InlineSeparator"],
+ " ",
+ Cell[BoxData[
+  ButtonBox["SparseArray",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/SparseArray"]], "InlineFormula"]
+}], "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 729},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"RepMatrices - Wolfram Mathematica",
+TaggingRules->{
+ "ModificationHighlight" -> False, 
+  "Metadata" -> {
+   "built" -> "{2014, 12, 18, 10, 47, 37.8947282}", "context" -> "Susyno`", 
+    "keywords" -> {}, "index" -> True, "label" -> "Susyno Paclet Symbol", 
+    "language" -> "en", "paclet" -> "Susyno", "status" -> "None", "summary" -> 
+    "RepMatrices[group, rep] Returns the matrices of a representation rep of \
+group RepMatrices[{group1, group2, ...}, {rep_group1, rep_group2, ...}] \
+Returns the matrices of representation rep_group1 of group1, rep_group2 of \
+group2, ...", "synonyms" -> {}, "title" -> "RepMatrices", "type" -> "Symbol", 
+    "uri" -> "Susyno/ref/RepMatrices"}, "LinkTrails" -> "", 
+  "SearchTextTranslated" -> ""},
+CellContext->"Global`",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "9.0 for Microsoft Windows (64-bit) (January 25, 2013)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[7165, 237, 461, 13, 70, "PrimaryExamplesSection",
+   CellTags->"PrimaryExamplesSection",
+   CellID->157754677]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 38644, 1029}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[604, 21, 76, 1, 70, "SymbolColorBar"],
+Cell[683, 24, 178, 5, 70, "LinkTrail"],
+Cell[864, 31, 2310, 53, 70, "AnchorBarGrid",
+ CellID->1],
+Cell[3177, 86, 54, 1, 70, "ObjectName",
+ CellID->1224892054],
+Cell[CellGroupData[{
+Cell[3256, 91, 1166, 35, 70, "Usage",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[4447, 130, 580, 17, 70, "NotesSection",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->340788281],
+Cell[5030, 149, 249, 9, 70, "Notes",
+ CellID->1067943069],
+Cell[5282, 160, 181, 5, 70, "Notes",
+ CellID->41030773],
+Cell[5466, 167, 589, 21, 70, "Notes",
+ CellID->812326107],
+Cell[6058, 190, 156, 4, 70, "Notes",
+ CellID->18412127],
+Cell[6217, 196, 899, 35, 70, "Notes",
+ CellID->288308808]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7165, 237, 461, 13, 70, "PrimaryExamplesSection",
+ CellTags->"PrimaryExamplesSection",
+ CellID->157754677],
+Cell[CellGroupData[{
+Cell[7651, 254, 148, 5, 70, "ExampleSection",
+ CellID->257072810],
+Cell[7802, 261, 90, 1, 70, "ExampleText",
+ CellID->513681956],
+Cell[CellGroupData[{
+Cell[7917, 266, 188, 6, 70, "Input",
+ CellID->196926373],
+Cell[8108, 274, 1246, 43, 36, "Output",
+ CellID->128080352]
+}, Open  ]],
+Cell[9369, 320, 118, 3, 70, "ExampleText",
+ CellID->349147845],
+Cell[CellGroupData[{
+Cell[9512, 327, 192, 4, 70, "Input",
+ CellID->4735082],
+Cell[9707, 333, 906, 33, 53, "Output",
+ CellID->28023960],
+Cell[10616, 368, 2585, 77, 70, "Output",
+ CellID->433609028]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13238, 450, 124, 3, 70, "ExampleDelimiter",
+ CellID->86916524],
+Cell[13365, 455, 191, 4, 70, "ExampleText",
+ CellID->692636],
+Cell[CellGroupData[{
+Cell[13581, 463, 97, 2, 28, "Input",
+ CellID->101142205],
+Cell[13681, 467, 6205, 109, 183, "Output",
+ CellID->226805460]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19947, 583, 238, 7, 70, "ExampleSection",
+ CellID->2123667759],
+Cell[20188, 592, 97, 1, 70, "ExampleText",
+ CellID->633240428],
+Cell[20288, 595, 99, 2, 70, "Input",
+ CellID->661675421],
+Cell[20390, 599, 150, 4, 70, "ExampleText",
+ CellID->356242323],
+Cell[CellGroupData[{
+Cell[20565, 607, 130, 4, 70, "Input",
+ CellID->619171038],
+Cell[20698, 613, 803, 16, 88, "Output",
+ CellID->21882826]
+}, Open  ]],
+Cell[21516, 632, 169, 4, 70, "ExampleText",
+ CellID->94195855],
+Cell[CellGroupData[{
+Cell[21710, 640, 247, 6, 70, "Input",
+ CellID->159557486],
+Cell[CellGroupData[{
+Cell[21982, 650, 307, 8, 70, "Print",
+ CellID->356764962],
+Cell[22292, 660, 141, 2, 70, "Print",
+ CellID->929148463]
+}, Open  ]],
+Cell[22448, 665, 1844, 47, 282, "Output",
+ CellID->392809554]
+}, Open  ]],
+Cell[24307, 715, 70, 1, 70, "ExampleText",
+ CellID->12390622],
+Cell[CellGroupData[{
+Cell[24402, 720, 241, 7, 70, "Input",
+ CellID->105951781],
+Cell[CellGroupData[{
+Cell[24668, 731, 279, 7, 70, "Print",
+ CellID->115580194],
+Cell[24950, 740, 109, 2, 70, "Print",
+ CellID->173705802]
+}, Open  ]],
+Cell[25074, 745, 9820, 168, 70, "Output",
+ CellID->334325817]
+}, Open  ]]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34955, 920, 419, 12, 70, "TutorialsSection",
+ CellID->250839057],
+Cell[35377, 934, 151, 3, 70, "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35565, 942, 427, 12, 70, "RelatedLinksSection",
+ CellID->1584193535],
+Cell[35995, 956, 921, 30, 70, "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+Cell[36931, 989, 23, 0, 70, "FooterCell"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
